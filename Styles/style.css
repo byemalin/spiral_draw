@@ -1,0 +1,8 @@
+body {
+  display: flexbox;
+  margin: 8px;
+  /* justify-content: center; */
+  text-align: center;
+  background-color: #252422;
+  /* background-color: #f2ede3; */
+}
