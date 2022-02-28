@@ -22,6 +22,12 @@ function setup() {
 
   saveBtn.position(30, 560);
 
+  clearBtn = createButton("Clear");
+//   removeBtn.position(30, 200)
+  clearBtn.mousePressed(clearFile);
+
+  clearBtn.position(30,320);
+
 
  
 
@@ -63,3 +69,8 @@ function saveToFile() {
     saveCanvas('mycanvas', 'png')
   }
 
+  function clearFile() {
+    // Save the current canvas to file as png
+    clear()
+    background(color("#f2ede3"));
+  }
