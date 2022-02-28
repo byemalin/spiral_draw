@@ -6,19 +6,21 @@ function setup() {
     background(color("#f2ede3"));
   
   
-  fillColorPicker = createColorPicker("#ed225d");
-//   fillColorPicker.position(0, height + 5);
+  fillColorPicker = createColorPicker("#F4F1DE");
+  fillColorPicker.position(30, 400);
 
   
-  strokeColorPicker = createColorPicker("#ed225d");
-//   strokeColorPicker.position(60, height + 5);
+  strokeColorPicker = createColorPicker("#E07A5F");
+  strokeColorPicker.position(30, 480);
 
 
 
 
-  saveBtn = createButton("Save Canvas");
+  saveBtn = createButton("Save Drawing");
 //   removeBtn.position(30, 200)
   saveBtn.mousePressed(saveToFile);
+
+  saveBtn.position(30, 560);
 
 
  
