@@ -5,6 +5,8 @@ body {
   text-align: center;
   background-color: #252422;
   /* background-color: #f2ede3; */
+  overflow: hidden;
+  position: fixed;
 }
 
 canvas {
