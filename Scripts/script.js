@@ -1,6 +1,8 @@
 
 var angle = 0.0;
 
+let slider;
+
 function setup() {
     let c =createCanvas(1500,900);
     background(color("#0B132B"));
@@ -16,29 +18,41 @@ function setup() {
 
   clearBtn = createButton("Clear");
   clearBtn.mousePressed(clearFile);
-  clearBtn.position(30,320); 
+  clearBtn.position(width +150,450); 
+
+  bgBtn = createButton("BG");
+  bgBtn.mousePressed(bgFile);
+  bgBtn.position(30, 320); 
+
+  slider = createSlider(20, 80, 40, 20);
+  slider.position(25, 250);
+  slider.style('width', '80px');
 }
 
 function draw() {
   if (mouseIsPressed) {
+
+    let slider_val = slider.value();
+
+
     translate(mouseX, mouseY);
     rotate(angle);
 
     fill(fillColorPicker.color());
     stroke(strokeColorPicker.color());
-    rect(-40, -40, 80, 80);
+    rect(-1*slider_val, -1*slider_val, slider_val*2, slider_val*2);
     angle += 0.1;
   }
 }
 
 function saveToFile() {
-    // Save the current canvas to file as png
     saveCanvas('mycanvas', 'png')
   }
 
   function clearFile() {
-    // Save the current canvas to file as png
     clear()
-    // background(color("#0B132B"));
+  }
+
+  function bgFile() {
     background(color(random(255),random(255),random(255)));
   }
