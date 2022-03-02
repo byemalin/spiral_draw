@@ -24,7 +24,7 @@ function setup() {
   bgBtn.mousePressed(bgFile);
   bgBtn.position(30, 320); 
 
-  slider = createSlider(20, 80, 40, 20);
+  slider = createSlider(10, 90, 40, 20);
   slider.position(25, 250);
   slider.style('width', '80px');
 }
