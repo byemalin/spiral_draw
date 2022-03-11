@@ -173,6 +173,7 @@ function saveToFile() {
 
   function clearFile() {
     clear()
+    me.history = [];
   }
 
   function bgFile() {

@@ -17,11 +17,11 @@ canvas {
 input {
   width: 70px;
   height: 70px;
-  /* position: absolute;
-  top: 0;
-  left: 0; */
+  border-radius: 10px;
 }
 button {
   width: 70px;
   height: 70px;
+  //background-color: #252422;
+  border-radius: 10px;
 }
